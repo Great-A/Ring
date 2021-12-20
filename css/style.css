@@ -1304,7 +1304,7 @@ section {
 
 @media only screen and (max-width: 540px) {
   .hero-section .content-holder .hero-left-holder {
-    height: 33vh; }
+    height: 10vh; }
     .hero-section .content-holder .hero-left-holder .hero-left {
       align-items: center; }
       .hero-section .content-holder .hero-left-holder .hero-left .mobile {
