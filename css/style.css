@@ -68,7 +68,7 @@ section {
 
 .hero-section {
   background-image: url("../img/hero-left-background.png");
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   position: relative; }
@@ -1099,8 +1099,8 @@ section {
     margin-top: 10px; }
 
 @media screen and (max-width: 540px) and (max-height: 650px) {
-  .hero-section {
-    height: 1000px; }
+  /* .hero-section {
+    height: 886 px; } */
     .hero-section .content-holder .hero-left-holder {
       height: 33vh; } }
 
@@ -1161,6 +1161,9 @@ section {
   .hero-section {
     background-image: url(/img/hero-background-mob.png.png);
     background: linear-gradient(359.87deg, #E7DECC 20.15%, rgba(233, 222, 201, 0.71) 64.41%), url(dutcher_ring.jpg), #A5A5A5;
+    background-image: url(/img/hero-top-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .hero-section .hero-background-left {
     display: none; }
@@ -1168,7 +1171,8 @@ section {
     display: none; }
   .hero-section .hero-background-top {
     background-image: url("/img/hero-top-background.png");
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 0;
     height: 50%;
@@ -1191,7 +1195,7 @@ section {
       width: 100%;
       padding: 0;
       position: relative;
-      top: -145px; }
+      top: -30px; }
       .hero-section .content-holder .hero-left-holder .hero-left {
         align-items: center;
         width: 100%;
@@ -1202,14 +1206,14 @@ section {
           line-height: 40px;
           display: none; }
         .hero-section .content-holder .hero-left-holder .hero-left .mobile {
+          font-size: 30px;
+          line-height: 37px;
+          color: #2E4A64;
           display: block;
-          font-size: 35px;
-          line-height: 45px;
           font-family: "Playfair Display Bold", sans-serif;
           font-style: normal;
           font-weight: bold;
           letter-spacing: 0.05em;
-          color: #FFFFFF;
           width: 535px; }
           .hero-section .content-holder .hero-left-holder .hero-left .mobile br {
             display: none; }
@@ -1223,22 +1227,28 @@ section {
           position: relative;
           left: -140px; }
     .hero-section .content-holder .hero-right {
-      width: 100%; }
+      width: 88%;
+      margin: auto;
+      padding-bottom: 80px;}
       .hero-section .content-holder .hero-right .desktop {
         display: none; }
       .hero-section .content-holder .hero-right .tablet {
         display: block;
         width: 100%;
+        width: 517px;
+        margin: auto;
         position: relative; } }
 
 @media only screen and (max-width: 700px) {
+  .hero-section {
+    height: 886px;}
   .hero-section .hero-background-left {
     display: none; }
   .hero-section .hero-background-right {
     display: none; }
   .hero-section .hero-background-top {
     background-image: url("../img/hero-top-background.png");
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
     top: 0;
     height: 100%;
@@ -1263,7 +1273,7 @@ section {
       width: 100%;
       padding: 0;
       position: relative;
-      top: -110px; }
+      top: -30px; }
       .hero-section .content-holder .hero-left-holder .hero-left {
         align-items: flex-start;
         width: 100%;
@@ -1275,13 +1285,13 @@ section {
           display: none; }
         .hero-section .content-holder .hero-left-holder .hero-left .mobile {
           display: block;
-          font-size: 30px;
-          line-height: 40px;
+          font-size: 25.9058px;
+          line-height: 37px;
+          color: #2E4A64;
           font-family: "Playfair Display Bold", sans-serif;
           font-style: normal;
           font-weight: bold;
           letter-spacing: 0.05em;
-          color: #FFFFFF;
           width: 100%; }
         .hero-section .content-holder .hero-left-holder .hero-left img {
           width: 475px; }
@@ -1289,22 +1299,27 @@ section {
           font-size: 18px;
           left: 0; }
     .hero-section .content-holder .hero-right {
-      width: 100%; }
+      width: 88%;
+      margin: auto; }
       .hero-section .content-holder .hero-right .desktop {
         display: none; }
       .hero-section .content-holder .hero-right .tablet {
         display: none;
         width: 100%;
-        position: relative; }
+        position: relative; }    
       .hero-section .content-holder .hero-right .mobile {
         display: block;
         width: 314px;
         margin: auto;
-        position: relative; } }
+        margin-bottom: 50px;
+        position: relative; } 
+      .hero-section .content-holder .hero-right .buy-ring {
+        width: 100%;
+        font-size: 18px;} }
 
 @media only screen and (max-width: 540px) {
   .hero-section .content-holder .hero-left-holder {
-    height: 33vh; }
+    height: 17vh; }
     .hero-section .content-holder .hero-left-holder .hero-left {
       align-items: center; }
       .hero-section .content-holder .hero-left-holder .hero-left .mobile {
