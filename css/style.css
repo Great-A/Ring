@@ -573,7 +573,6 @@ section {
   display: flex;
   justify-content: space-between;
   background: linear-gradient(273deg, #E7DDCA 2.21%, #EFF1F3 99.96%);
-  /* background-image: url(/img/ninth-section-bg.png); */
   padding-top: 155px;
   padding-bottom: 365px;
   position: relative; }
@@ -584,9 +583,6 @@ section {
     top: 0;
     height: 100%;
     width: 50%; }
-  .ninth-section .ring-desktop {
-    z-index: 2;
-    display: none; }
   .ninth-section .ring-mobile {
     z-index: 2;
     display: none; }
@@ -645,6 +641,137 @@ section {
       padding-top: 7px;
       padding-bottom: 7px;
       margin-top: 30px; }
+
+.tenth-section {
+  background-image: url("../img/third-section-background.png");
+  height: 896px;
+  position: relative; }
+  .tenth-section .layer {
+    background: linear-gradient(269.45deg, rgba(201, 196, 182, 0.9) 35.01%, rgba(157, 157, 157, 0.9) 99.63%);
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%; }
+    .tenth-section .layer .hero-background-right {
+      background-image: url("../img/tenth-section-background.png");
+      background-size: 100% 100%;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 50%; }
+    .tenth-section .layer .background-ring {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%; }
+    .tenth-section .layer .background-ring-2 {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .tenth-section .layer .section-right {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 54.5%;
+      z-index: 20; }
+      .tenth-section .layer .section-right h3 {
+        font-family: "Playfair Display Bold", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 53px;
+        letter-spacing: 0.05em;
+        color: #2E4A64;
+        margin-bottom: 30px;
+        width: 700px; }
+      .tenth-section .layer .section-right p {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 183%;
+        color: #2E4A64;
+        margin-top: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 584px; }
+      .tenth-section .layer .section-right .buy-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 30px; }
+        .tenth-section .layer .section-right .buy-holder h4 {
+          font-family: "Playfair Display Bold", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          color: #2E4A64;
+          margin-bottom: 17px; }
+        .tenth-section .layer .section-right .buy-holder .form .form-group {
+          display: flex;
+          align-items: center;
+          width: 100%; }
+          .tenth-section .layer .section-right .buy-holder .form .form-group a {
+            height: 13px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start; }
+          .tenth-section .layer .section-right .buy-holder .form .form-group label {
+            font-family: "Playfair Display", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 0.05em;
+            color: #2E4A64;
+            margin-bottom: 2px;
+            margin-right: 12px;
+            margin-left: 19px; }
+        .tenth-section .layer .section-right .buy-holder .form p {
+          font-family: "Playfair Display", sans-serif;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          letter-spacing: 0.05em;
+          color: #2E4A64;
+          padding-bottom: 24px; }
+        .tenth-section .layer .section-right .buy-holder .help {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          right: 248px;
+          bottom: 159px;
+          background: rgba(113, 132, 150, 0.6);
+          border: 1px solid #C8D2DB;
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 29px;
+          overflow: hidden;
+          z-index: 3; }
+          .tenth-section .layer .section-right .buy-holder .help .help-text {
+            width: auto;
+            margin-top: 19px; }
+        .tenth-section .layer .section-right .buy-holder .help::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          background: #718496;
+          filter: blur(20px); }
+        .tenth-section .layer .section-right .buy-holder .hidden {
+          display: none !important; }
+
+
 
 .eleventh-section {
   background-image: url("../img/third-section-background.png");
@@ -1760,12 +1887,11 @@ section {
     font-size: 18px; } }
 
 @media only screen and (max-width: 1640px) {
-  .ninth-section .ring-desktop {
-    display: block; }
-  .ninth-section .ring-xl {
-    display: none; }
   .ninth-section .section-left {
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  .ninth-section .ring-xl {
+    height: 80%;
+  } }
 
 @media only screen and (max-width: 1480px) {
   .eight-section {
@@ -1787,10 +1913,13 @@ section {
 
   .ninth-section {
     justify-content: space-between;
-    align-items: center; }
-    .ninth-section .ring-desktop {
-      width: 40%;
+    align-items: center;
+    padding-bottom: 155px; }
+    .ninth-section .ring-xl {
+      width: 52%;
       height: auto; }
+    .ninth-section .right-bg {
+      height: 108%;}
     .ninth-section .section-left {
       margin-left: 6%;
       margin-top: 0; }
@@ -1838,25 +1967,25 @@ section {
             position: relative;
             align-self: flex-end; }
           .eight-section .layer .content .carousel .carousel-control-holder .review-preview {
-            left: 0; }
-
-  .ninth-section .ring-desktop {
-    width: 30%; } }
+            left: 0; }}
 
 @media only screen and (max-width: 1020px) {
   .ninth-section {
-    flex-direction: column; }
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 0;
+    background: linear-gradient(180deg, #E7DECC 0%, #EFF1F3 83.07%); }
     .ninth-section .ninth-section-background {
       display: none; }
-    .ninth-section .ring-desktop {
-      display: none; }
+    .ninth-section .ring-xl {
+        display: none;}
     .ninth-section .ring-mobile {
       display: block;
       width: 100%; }
     .ninth-section .section-left {
       margin-left: 6%;
       margin-right: 6%;
-      margin-top: 50px; }
+      margin-bottom: 75px; }
       .ninth-section .section-left h3 {
         width: 100%; }
       .ninth-section .section-left p {
@@ -1910,15 +2039,20 @@ section {
   .eight-section .section-left a {
     font-size: 18px; } }
 
-@media only screen and (max-width: 500px) {
-  .ninth-section .section-left a {
-    width: 100%; } }
-
 @media only screen and (min-width: 1921px) {
+  .tenth-section {
+    background-size: 100% 100%; } 
   .eleventh-section {
     background-size: 100% 100%; } }
 
 @media only screen and (max-width: 1540px) {
+  .tenth-section .layer {
+    justify-content: flex-end; }
+    .tenth-section .layer .background-ring {
+      left: -200px; }
+    .tenth-section .layer .section-right {
+      margin-left: 0;
+      margin-right: 7%; }
   .eleventh-section .layer {
     justify-content: flex-end; }
     .eleventh-section .layer .background-ring {
@@ -1928,12 +2062,43 @@ section {
       margin-right: 7%; } }
 
 @media only screen and (max-width: 1380px) {
+  .tenth-section .layer .background-ring {
+    left: -400px; }
+  .tenth-section .layer .section-right {
+    margin-right: 4%; }
   .eleventh-section .layer .background-ring {
     left: -400px; }
   .eleventh-section .layer .section-right {
     margin-right: 4%; } }
 
 @media only screen and (max-width: 1150px) {
+  .tenth-section {
+    height: 1190px;
+    background-size: 100% 100%; }
+    .tenth-section .layer {
+      flex-direction: column-reverse;
+      justify-content: flex-start; }
+      .tenth-section .layer .hero-background-right {
+        display: none; }
+      .tenth-section .layer .background-ring {
+        left: 0;
+        position: relative;
+        width: 920px;
+        height: auto; }
+      .tenth-section .layer .section-right {
+        margin-right: 0;
+        width: 88%;
+        align-self: center;
+        position: relative;
+        bottom: -100px; }
+        .tenth-section .layer .section-right h3 {
+          width: 100%; }
+        .tenth-section .layer .section-right p {
+          width: 100%; }
+        .eleventh-section .layer .section-right .buy-holder .help {
+          bottom: -64px;
+          right: 20%; }
+
   .eleventh-section {
     height: 1190px;
     background-size: 100% 100%; }
@@ -1962,10 +2127,21 @@ section {
           right: 20%; } }
 
 @media only screen and (max-width: 1003px) {
+  .tenth-section {
+    height: 1240px; } 
   .eleventh-section {
     height: 1240px; } }
 
 @media only screen and (max-width: 920px) {
+  .tenth-section {
+    height: 1100px; }
+    .tenth-section .layer .background-ring {
+      width: 750px; }
+    .tenth-section .layer .section-right {
+      position: relative;
+      bottom: -85px; }
+      .tenth-section .layer .section-right .buy-holder .help {
+        right: 0; }
   .eleventh-section {
     height: 1100px; }
     .eleventh-section .layer .background-ring {
@@ -1977,16 +2153,36 @@ section {
         right: 0; } }
 
 @media only screen and (max-width: 817px) {
+  .tenth-section {
+    height: 1130px; }
   .eleventh-section {
     height: 1130px; } }
 
 @media only screen and (max-width: 750px) {
+  .tenth-section {
+    height: 1000px; }
+    .tenth-section .layer .background-ring {
+      width: 550px; }
   .eleventh-section {
     height: 1000px; }
     .eleventh-section .layer .background-ring {
       width: 550px; } }
 
 @media only screen and (max-width: 687px) {
+  .tenth-section {
+    height: 920px; }
+    .tenth-section .layer .section-right {
+      bottom: -80px; }
+      .tenth-section .layer .section-right h3 {
+        font-size: 30px;
+        line-height: 133%; }
+      .tenth-section .layer .section-right p {
+        font-size: 15px; }
+      .tenth-section .layer .section-right .buy-holder .help {
+        right: auto;
+        display: flex;
+        align-self: center;
+        bottom: 100px; }
   .eleventh-section {
     height: 920px; }
     .eleventh-section .layer .section-right {
@@ -2003,6 +2199,10 @@ section {
         bottom: 100px; } }
 
 @media only screen and (max-width: 554px) {
+  .tenth-section {
+    height: 940px; }
+    .tenth-section .layer .background-ring {
+      width: 100%; }
   .eleventh-section {
     height: 940px; }
     .eleventh-section .layer .background-ring {
@@ -2010,11 +2210,34 @@ section {
 
 @media only screen and (max-width: 500px) {
   .eight-section .layer .content .carousel .carousel-control-holder .review-preview {
-    width: 88%; } 
+    width: 88%; }
+  .tenth-section .layer .section-right a {
+    width: 100%; } 
   .eleventh-section .layer .section-right a {
-    width: 100%; } }
+    width: 100%; } 
+  .ninth-section .section-left a {
+    width: 100%; }
+  .ninth-section .right-bg{
+    height: 70%;}
+  .ninth-section .section-left h3{
+    font-size: 25.9058px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: #2E4A64;}
+    .ninth-section .section-left h3 br {
+      display: none;}
+    .ninth-section .section-left p {
+      font-weight: 300;
+      font-size: 13.9765px;
+      line-height: 26px;
+      color: #2E4A64}
+}
 
 @media only screen and (max-width: 450px) {
+  .tenth-section {
+    height: 930px; }
+    .tenth-section .layer .section-right .buy-holder .help {
+      bottom: 150px; }
   .eleventh-section {
     height: 930px; }
     .eleventh-section .layer .section-right .buy-holder .help {
