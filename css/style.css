@@ -1331,11 +1331,7 @@ section {
         font-size: 18px;}}
 @media only screen and (max-width: 540px) {
   .hero-section .content-holder .hero-left-holder {
-<<<<<<< HEAD
-    height: 10vh; }
-=======
-    height: 17vh; }
->>>>>>> 54d8a20815eae9ed01bcbf6d9b52a6e7368c9b18
+ height: 10vh; }
     .hero-section .content-holder .hero-left-holder .hero-left {
       align-items: center; }
       .hero-section .content-holder .hero-left-holder .hero-left .mobile {
@@ -1421,16 +1417,13 @@ section {
 
 @media only screen and (max-width: 1200px) {
   .third-section {
-    height: 1200px;
     background-repeat: no-repeat;
     background-size: 100% 100%; }
     .third-section .layer .background-ring {
-      width: 920px;
       display: block; }
     .third-section .layer .background-ring-2 {
       display: none; }
     .third-section .layer .section-left {
-      margin-top: 540px;
       padding-left: 6%; }
       .third-section .layer .section-left h3 {
         margin-top: 0; } }
