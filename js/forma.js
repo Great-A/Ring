@@ -28,7 +28,9 @@ let billingInputs = document.getElementsByClassName("billing")
 
 // Dugmici za nacin placanja
 let onePay = document.getElementById("1pay")
+let onePayReverse = document.getElementById("1pay-reverse-ring")
 let threePay = document.getElementById("3pay")
+let threePayReverse = document.getElementById("3pay-reverse-ring")
 
 // Validacija prve strane 
 let fname = document.getElementById("firstname")
@@ -56,7 +58,7 @@ var $expDate = $form.find("#expdate");
 formButton.addEventListener("click", () => {
   if (fname.value == "" || lname.value == "" || email.value == "" || phone.value == "") {
     return
-  } else if (onePay.checked == false && threePay.checked == false) {
+  } else if (onePay.checked == false && threePay.checked == false && onePayReverse.checked == false && threePayReverse.checked == false) {
     alert("Please select a payment method");
     var target = "#buy-section";
     var scrollToPosition = $(target).offset().top;
@@ -381,9 +383,3 @@ $expDate.on("keyup", function (event) {
   });
 });
 
-let carousel = document.querySelector(".carousel");
-console.log(carousel);
-
-// $(carousel).carousel({
-//   interval: 99999999,
-// });
