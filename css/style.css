@@ -652,13 +652,6 @@ section {
     justify-content: flex-start;
     position: relative;
     height: 100%; }
-    .tenth-section .layer .hero-background-right {
-      background-image: url("../img/tenth-section-background.png");
-      background-size: 100% 100%;
-      position: absolute;
-      right: 0;
-      height: 100%;
-      width: 50%; }
     .tenth-section .layer .background-ring {
       position: absolute;
       left: 0;
@@ -673,7 +666,7 @@ section {
       justify-content: center;
       display: flex;
       flex-direction: column;
-      margin-left: 54.5%;
+      margin-left: 63.5%;
       z-index: 20; }
       .tenth-section .layer .section-right h3 {
         font-family: "Playfair Display Bold", sans-serif;
@@ -712,14 +705,19 @@ section {
           margin-bottom: 17px; }
         .tenth-section .layer .section-right .buy-holder .form .form-group {
           display: flex;
-          align-items: center;
+          align-items: baseline;
           width: 100%; }
           .tenth-section .layer .section-right .buy-holder .form .form-group a {
             height: 13px;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start; }
-          .tenth-section .layer .section-right .buy-holder .form .form-group label {
+          .tenth-section .form-info, 
+          .eleventh-section .form-info {
+            margin-left: 19px;
+          }
+          .tenth-section .layer .section-right .buy-holder .form .form-group label,
+          .eleventh-section .layer .section-right .buy-holder .form .form-group label  {
             font-family: "Playfair Display", sans-serif;
             font-style: normal;
             font-weight: normal;
@@ -727,10 +725,10 @@ section {
             line-height: 21px;
             letter-spacing: 0.05em;
             color: #2E4A64;
-            margin-bottom: 2px;
-            margin-right: 12px;
-            margin-left: 19px; }
-        .tenth-section .layer .section-right .buy-holder .form p {
+            margin-bottom: 13px;
+            margin-right: 12px;}
+        .tenth-section .layer .section-right .buy-holder .form p,
+        .eleventh-section .layer .section-right .buy-holder .form p {
           font-family: "Playfair Display", sans-serif;
           font-style: italic;
           font-weight: normal;
@@ -738,7 +736,8 @@ section {
           line-height: 19px;
           letter-spacing: 0.05em;
           color: #2E4A64;
-          padding-bottom: 24px; }
+          padding-bottom: 24px;
+          padding-left: 28px; }
         .tenth-section .layer .section-right .buy-holder .help {
           position: absolute;
           display: flex;
@@ -770,15 +769,77 @@ section {
           filter: blur(20px); }
         .tenth-section .layer .section-right .buy-holder .hidden {
           display: none !important; }
+        .tenth-section .background-ring-mob,
+        .eleventh-section  .background-ring-mob {
+          display: none;}
+  .radio-btn {
+    opacity: 0;
+  }
 
+  #open-help:hover,
+  .radio-btn:hover {
+    cursor: pointer;
+  }
 
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 2;
+  }
+[type="radio"]:checked + .form-info label,
+[type="radio"]:not(:checked) + .form-info label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + .form-info label:before,
+[type="radio"]:not(:checked) + .form-info label:before {
+  content: '';
+  position: absolute;
+  left: -19px;
+  top: -5px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #2E4A64;
+  border-radius: 100%;
+  background: transparent;
+}
+[type="radio"]:checked + .form-info label:after,
+[type="radio"]:not(:checked) + .form-info label:after {
+    content: url('../img/Union.png');
+    width: 22px;
+    height: 22px;
+    padding-left: 7px;
+    background: #B5383E;
+    position: absolute;
+    left: -19px;
+    top: -5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + .form-info label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + .form-info label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
 
 .eleventh-section {
-  background-image: url("../img/third-section-background.png");
-  height: 896px;
+  background-image: url("../img/eleventh-section-ring.png");
+  height: 786px;
   position: relative; }
   .eleventh-section .layer {
-    background-color: rgba(46, 74, 100, 0.74);
+    background: linear-gradient(270.93deg, #E7DDCA 2.21%, #EFF1F3 99.96%);
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -790,20 +851,17 @@ section {
       right: 0;
       height: 100%;
       width: 50%; }
-    .eleventh-section .layer .background-ring {
+    .eleventh-section .layer .background-ring, 
+    .eleventh-section .layer .background-ring-mob {
       position: absolute;
-      left: 0;
+      right: 0;
       bottom: 0; }
-    .eleventh-section .layer .background-ring-2 {
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 0; }
+
     .eleventh-section .layer .section-right {
       justify-content: center;
       display: flex;
       flex-direction: column;
-      margin-left: 54.5%;
+      margin-left: 14.6%;
       z-index: 20; }
       .eleventh-section .layer .section-right h3 {
         font-family: "Playfair Display Bold", sans-serif;
@@ -842,33 +900,13 @@ section {
           margin-bottom: 17px; }
         .eleventh-section .layer .section-right .buy-holder .form .form-group {
           display: flex;
-          align-items: center;
+          align-items:baseline;
           width: 100%; }
           .eleventh-section .layer .section-right .buy-holder .form .form-group a {
             height: 13px;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start; }
-          .eleventh-section .layer .section-right .buy-holder .form .form-group label {
-            font-family: "Playfair Display", sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 21px;
-            letter-spacing: 0.05em;
-            color: #2E4A64;
-            margin-bottom: 2px;
-            margin-right: 12px;
-            margin-left: 19px; }
-        .eleventh-section .layer .section-right .buy-holder .form p {
-          font-family: "Playfair Display", sans-serif;
-          font-style: italic;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 19px;
-          letter-spacing: 0.05em;
-          color: #2E4A64;
-          padding-bottom: 24px; }
         .eleventh-section .layer .section-right .buy-holder .help {
           position: absolute;
           display: flex;
@@ -1769,6 +1807,7 @@ section {
 
 @media only screen and (max-width: 1150px) {
   .sixth-section {
+    background: linear-gradient(269.25deg, #A1A1A0 7.14%, #C9C4B6 77.75%);
     flex-direction: column;
     align-items: center;
     padding-top: 43px;
@@ -2051,8 +2090,9 @@ section {
     .tenth-section .layer .background-ring {
       left: -200px; }
     .tenth-section .layer .section-right {
+      width: 41%;
       margin-left: 0;
-      margin-right: 7%; }
+      margin-right:0; }
   .eleventh-section .layer {
     justify-content: flex-end; }
     .eleventh-section .layer .background-ring {
@@ -2062,14 +2102,18 @@ section {
       margin-right: 7%; } }
 
 @media only screen and (max-width: 1380px) {
+  .tenth-section {
+    height: 668px; }
   .tenth-section .layer .background-ring {
-    left: -400px; }
+    left: -210px; }
   .tenth-section .layer .section-right {
-    margin-right: 4%; }
+    width: 52%;
+  }
   .eleventh-section .layer .background-ring {
-    left: -400px; }
+    left: -210px; }
   .eleventh-section .layer .section-right {
-    margin-right: 4%; } }
+    margin-right: 4%; } 
+  }
 
 @media only screen and (max-width: 1150px) {
   .tenth-section {
@@ -2090,7 +2134,7 @@ section {
         width: 88%;
         align-self: center;
         position: relative;
-        bottom: -100px; }
+        bottom: -20px; }
         .tenth-section .layer .section-right h3 {
           width: 100%; }
         .tenth-section .layer .section-right p {
@@ -2139,7 +2183,7 @@ section {
       width: 750px; }
     .tenth-section .layer .section-right {
       position: relative;
-      bottom: -85px; }
+      bottom: -12px; }
       .tenth-section .layer .section-right .buy-holder .help {
         right: 0; }
   .eleventh-section {
@@ -2154,7 +2198,7 @@ section {
 
 @media only screen and (max-width: 817px) {
   .tenth-section {
-    height: 1130px; }
+    height: 1030px; }
   .eleventh-section {
     height: 1130px; } }
 
@@ -2172,12 +2216,14 @@ section {
   .tenth-section {
     height: 920px; }
     .tenth-section .layer .section-right {
-      bottom: -80px; }
+      bottom: 0; }
       .tenth-section .layer .section-right h3 {
-        font-size: 30px;
-        line-height: 133%; }
+        font-size: 25px;
+        line-height: 142%;
+        letter-spacing: 0.05em; }
       .tenth-section .layer .section-right p {
-        font-size: 15px; }
+        font-size: 14px;
+        line-height: 33px; }
       .tenth-section .layer .section-right .buy-holder .help {
         right: auto;
         display: flex;
@@ -2203,6 +2249,12 @@ section {
     height: 940px; }
     .tenth-section .layer .background-ring {
       width: 100%; }
+      .tenth-section .layer .background-ring {
+        display: none;
+      }
+      .tenth-section .layer .background-ring-mob {
+        display: block;
+      }
   .eleventh-section {
     height: 940px; }
     .eleventh-section .layer .background-ring {
