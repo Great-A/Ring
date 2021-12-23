@@ -811,13 +811,13 @@ section {
 [type="radio"]:checked + .form-info label:after,
 [type="radio"]:not(:checked) + .form-info label:after {
     content: url('../img/union.svg');
-    width: 22px;
-    height: 22px;
-    padding-left: 7px;
+    width: 24px;
+    height: 24px;
+    padding-left: 6px;
     background: #B5383E;
     position: absolute;
-    left: -19px;
-    top: 0;
+    left: -20px;
+    top: -1px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -1343,11 +1343,18 @@ section {
   .fourth-section {
     padding-bottom: 50px;
     padding-top: 80px;}
+    .fourth-section .fourth-section-background {
+      left: -75px;
+    }
     .third-section .layer .section-left {
       margin-left: 8%; } 
       .fourth-section .section-right {
-        margin-left: 40%;
-      }}
+        margin-left: 47%;
+      }
+      .fourth-section .section-right p {
+        width: 645px;
+      }
+    }
 
 
 @media only screen and (max-width: 900px) {
@@ -1467,7 +1474,7 @@ section {
     padding-bottom: 50px;
   }
     .fourth-section .fourth-section-background {
-      background-image: url(../img/fourth-section-background-mob.png);
+      left: 0;
       width: 100%;
       height: 50%;
     }
@@ -2502,3 +2509,6 @@ section {
     font-size: 15px;
     margin-top: 35px; } }
 
+#close-help {
+  cursor: pointer;
+}
