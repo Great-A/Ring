@@ -183,7 +183,7 @@ section {
       color: #374B5F;
       margin-bottom: 0; }
     .second-section .section-right p {
-      font-family: "Poppins Light", sans-serif;
+      font-family: "Poppins ", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -296,7 +296,7 @@ section {
   align-items: center;
   padding-top: 130px;
   padding-bottom: 115px; 
-  background: linear-gradient(270deg, #E7DDCA 2.21%, #EFF1F3 99.96%);}
+  background: linear-gradient(185deg, #E7DDCA 2.21%, #EFF1F3 99.96%);}
   .fifth-section h2 {
     font-family: "Playfair Display", sans-serif;
     font-style: normal;
@@ -324,7 +324,7 @@ section {
       width: 763px;
       height: 445px; }
   .fifth-section p {
-    font-family: "Poppins Light", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -378,12 +378,12 @@ section {
       margin-bottom: 0;
       width: 661px; }
     .sixth-section .section-right p {
-      font-family: "Poppins Light", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 183%;
-      color: #687887;
+      color: #2E4A64;
       width: 661px;
       margin-bottom: 0;
       margin-top: 20px; }
@@ -473,10 +473,11 @@ section {
       .eight-section .layer .content a img {
         box-shadow: 0px 60px 100px -20px rgba(10, 35, 57, 0.09);
         margin-right: 115px;
+        margin-top: 30px;
         transition: width 2s;
-        width: 507px; }
+        width: 444px; }
         .eight-section .layer .content a img:hover {
-          width: 607px; }
+          width: 507px; }
       .eight-section .layer .content .carousel .carousel-inner .carousel-item .review-holder .review-text {
         font-family: "Poppins", sans-serif;
         font-style: italic;
@@ -626,7 +627,7 @@ section {
       margin-bottom: 0;
       margin-top: 20px; }
     .ninth-section .section-left a {
-      font-family: "Poppins Light";
+      font-family: "Poppins ";
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
@@ -692,7 +693,8 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-top: 30px; }
+        margin-top: 30px;
+      margin-bottom: 30px; }
         .tenth-section .layer .section-right .buy-holder h4 {
           font-family: "Playfair Display Bold", sans-serif;
           font-style: normal;
@@ -1482,7 +1484,11 @@ section {
       justify-content: end;
       width: 88%;
       margin-left: 0;
+      height: 90%;
     }
+    .fourth-section .section-right h3 {
+      font-size: 26px;
+      line-height: 37px;}
     .fourth-section .section-right p {
       width: 100%;
     }
@@ -1655,14 +1661,14 @@ section {
           display: none; }
       .third-section .layer .section-left p,
       .fourth-section .section-right p {
-        font-size: 13px;
+        font-size: 14px;
         width: 100%;
         line-height: 26px;
         color: #2E4A64; }
       .third-section .layer .section-left a {
         font-size: 18px; }
   .fourth-section {
-    background: linear-gradient(272.28deg, #A1A1A0 21.8%, #C9C4B6 61.63%);}
+    background: linear-gradient(357deg, #A1A1A0 21.8%, #C9C4B6 61.63%);}
     .fourth-section .fourth-section-background {
       background-image: url(../img/fourth-section-background-mob.png);
     }
@@ -1670,6 +1676,7 @@ section {
       justify-content: end;
       width: 88%;
       margin-left: 0;
+      height: 86%;
     }
     .fourth-section .section-right p {
       width: 100%;
@@ -1703,23 +1710,6 @@ section {
   .seventh-section .section-right a {
     width: 100%; }}
 
-@media only screen and (max-width: 420px) {
-  .third-section,
-  .fourth-section {
-    height: 900px; }
-  .hero-section .hero-top a span {
-    display: none; }
-    .third-section .layer .background-ring {
-      width: 336px; }
-      .third-section .layer .section-left p {
-        margin-bottom: 0; } 
-      .fourth-section .section-right a {
-    margin-top: 30px;
-  }
-  .fourth-section .section-right br {
-    display: none;
-  }}
-  
 
 @media only screen and (max-width: 390px) {
   .hero-section {
@@ -1752,7 +1742,9 @@ section {
   .fifth-section .video-holder iframe {
     height: 281px; }
   .fifth-section p {
-    font-size: 15px; }
+    font-weight: 300;
+    font-size: 13.9765px;
+    line-height: 26px; }
   .fifth-section a {
     font-size: 18px; } }
 
@@ -1783,7 +1775,10 @@ section {
 @media only screen and (max-width: 1190px) {
   .fifth-section .layer p {
     width: 88%; } }
-
+@media only screen and (max-width: 782px) {
+    .fourth-section .section-right {
+      height: 93%;
+    }}
 @media only screen and (max-width: 750px) {
   .fifth-section .layer {
     padding-top: 88px;
@@ -1798,6 +1793,29 @@ section {
   .fifth-section .layer p {
     font-size: 15px; } }
 
+    @media only screen and (max-width: 420px) {
+      .third-section,
+      .fourth-section {
+        height: 1000px; }
+      .hero-section .hero-top a span {
+        display: none; }
+        .fourth-section .fourth-section-background {
+          height: 42%;
+        }
+        .fourth-section .section-right {
+          height: 96%;
+        }
+        .third-section .layer .background-ring {
+          width: 336px; }
+          .third-section .layer .section-left p {
+            margin-bottom: 0; } 
+          .fourth-section .section-right a {
+        margin-top: 30px;
+      }
+      .fourth-section .section-right br {
+        display: none;
+      }}
+      
 @media only screen and (max-width: 1600px) {
   .sixth-section {
     justify-content: center; }
@@ -1856,7 +1874,7 @@ section {
     line-height: 37px;
     color: #2E4A64; }
   .sixth-section .section-right p {
-    font-size: 13px;
+    font-size: 13.9765px;
     line-height: 26px;
     color: #2E4A64; }
   .sixth-section .section-right a {
@@ -2092,6 +2110,9 @@ section {
     background-size: 100% 100%; } }
 
 @media only screen and (max-width: 1540px) {
+  .second-section, .fourth-section {
+    padding-bottom: 50px;
+    padding-top: 80px;}
   .tenth-section .layer {
     justify-content: flex-end; }
     .tenth-section .layer .background-ring {
@@ -2119,7 +2140,7 @@ section {
 
 @media only screen and (max-width: 1150px) {
   .tenth-section {
-    height: 1090px;
+    height: 1200px;
     background-size: 100% 100%; }
     .tenth-section .layer {
       flex-direction: column-reverse;
@@ -2149,14 +2170,13 @@ section {
     height: 1190px;
     background-size: 100% 100%; }
     .eleventh-section .layer {
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: flex-start; }
       .eleventh-section .layer .hero-background-right {
         display: none; }
       .eleventh-section .layer .background-ring {
         left: 0;
         position: relative;
-        width: 920px;
         height: auto; }
       .eleventh-section .layer .section-right {
         margin-right: 0;
@@ -2190,11 +2210,8 @@ section {
         right: 0; }
   .eleventh-section {
     height: 1100px; }
-    .eleventh-section .layer .background-ring {
-      width: 750px; }
     .eleventh-section .layer .section-right {
-      position: relative;
-      bottom: -85px; }
+      position: relative;}
       .eleventh-section .layer .section-right .buy-holder .help {
         right: 0; } }
 
@@ -2205,14 +2222,16 @@ section {
     height: 1130px; } }
 
 @media only screen and (max-width: 750px) {
+  .seventh-section {
+    background:url(../img/seventh-section-background.png);
+    background-size: auto;
+  }
   .tenth-section {
     height: 1000px; }
     .tenth-section .layer .background-ring {
       width: 550px; }
   .eleventh-section {
-    height: 1000px; }
-    .eleventh-section .layer .background-ring {
-      width: 550px; } }
+    height: 1000px; } }
 
 @media only screen and (max-width: 687px) {
   .tenth-section {
@@ -2235,7 +2254,7 @@ section {
   .eleventh-section {
     height: 920px; }
     .eleventh-section .layer .section-right {
-      bottom: -80px; }
+      bottom: 40px; }
       .eleventh-section .layer .section-right p {
         font-size: 15px; }
       .eleventh-section .layer .section-right .buy-holder .help {
@@ -2274,6 +2293,7 @@ section {
   .eleventh-section {
     height: 940px; }
   .eleventh-section .layer {
+    flex-direction: column;
     background: linear-gradient(349deg, #E7DDCA 2.21%, #EFF1F3 99.96%);
   }
     .eleventh-section .layer .background-ring {
@@ -2311,12 +2331,14 @@ section {
       bottom: 150px; }
   .eleventh-section {
     height: 930px; }
+    .eleventh-section .layer .section-right {
+      bottom: -40px;}
     .eleventh-section .layer .section-right .buy-holder .help {
       bottom: 150px; } }
 
 @media only screen and (min-width: 1921px) {
   .twelfth-section {
-    background-size: 100% 100%; } }
+    background-size: 100% 100%; }}
 
 @media only screen and (max-width: 1420px) {
   .twelfth-section .content {
